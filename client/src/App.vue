@@ -13,7 +13,11 @@ const paymentIntent = ref(null);
 const messages = ref([]);
 
 // Get readers before mounting the component
-onBeforeMount(async () => {});
+onBeforeMount(async () => {
+  const respond = await fetch("api/readers') ;
+  const result = await response.json();
+  readerList.value = result.readerList;
+});
 
 // Process payment click handler
 const processPayment = async () => {};
