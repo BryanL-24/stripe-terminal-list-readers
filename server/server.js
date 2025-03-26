@@ -13,6 +13,6 @@ const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY, {
   },
 });
 
-app.listen(4242, () =>
-  console.log(`Node server listening at http://localhost:4242`)
+app.listen(3000, () =>
+  console.log(`Node server listening at http://localhost:3000`)
 );
